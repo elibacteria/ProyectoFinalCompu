@@ -328,14 +328,17 @@ int main(){
 				}
 				
 				if(atractivo>=70){
+					cout<<endl;
 					cout<<"Felicidades!!! Lograste mantener tu atractivo y con eso enamorar a Alex"<<endl;
 					cout<<"Eres un expert@ en Flirt Simulator"<<endl;
 					cout<<"Esperamos te hayas divertido mucho, vuelve pronto <3<3<3"<<endl;
 				}else if(atractivo<70 && atractivo>40){
+					cout<<endl;
 					cout<<"Has conseguido un maravilloso amigo!! u_u"<<endl;
 					cout<<"Alex no se enamoro de ti pero te considera como una hermana"<<endl;
 					cout<<"Puedes volver a intentar la proxima vez"<<endl;
-				}else if(atractivo<40){
+				}else if(atractivo<=40){
+					cout<<endl;
 					cout<<"Lamentablemente Alex considera que su relacion no tiene futuro, ni como amigos"<<endl;
 					cout<<"Hay mas peces en el mar...tal vez"<<endl;
 					cout<<"Puedes volver a intentar la proxima vez"<<endl;
