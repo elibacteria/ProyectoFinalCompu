@@ -10,7 +10,9 @@ int main(){
 	int respuestaDos = 0;//Variable que representa la respuesta a la segunda pregunta
 	int respuestaTres = 0;//Variable que representa la respuesta a la tercera pregunta
 	int respuestaCuatro = 0;//Variable que representa la respuesta a la cuarta pregunta
-	int respuestaCinco = 0;//Variable que representa la respuesta a la quinta pregunta
+	int respuestaCincoA = 0;//Variable que representa la respuesta de la pregunta cinco A
+	int respuestaCincoB = 0;//Variable que representa la respuesta de la pregunta cinco B
+	int respuestaSeis = 0;//Variable que representa la respuesta a la sexta pregunta
 	
 	do{
 		//Menu inicial
@@ -158,16 +160,31 @@ int main(){
 				
 				cout<<endl;
 				cout<<"Alex y tu parecen llevarse muy bien, pero es solo amistad o sera algo mas..."<<endl;
-				cout<<"WOW!!! No lo esperabas y Alex te ha invitado a una cita"<<endl;
-				cout<<"Te propone ir por un cafe y despues al cine a ver una pelicula"<<endl;
+				cout<<"Pasan las semanas y no sabes como acercarte mas a el..."<<endl;
+				cout<<"WOW!! La oportunidad que necesitabas esta frente a ti..."<<endl;
+				cout<<endl;
+				cout<<"+.......................+"<<endl;
+				cout<<":      PROXIMAMENTE     :"<<endl;
+				cout<<":       DANNY FLOW      :"<<endl;
+				cout<<":                       :"<<endl;
+				cout<<":   EN EL SHINE ARAGON  :"<<endl;
+				cout<<":                       :"<<endl;
+				cout<<":  No olvides invitar a :"<<endl;
+				cout<<":      tu enamorad@     :"<<endl;
+				cout<<":        <3<3<3         :"<<endl;
+				cout<<":                       :"<<endl;
+				cout<<":  Preventa de boletos  :"<<endl;
+				cout<<":  al numero 5534968576 :"<<endl;
+				cout<<"+.......................+"<<endl;
+				cout<<endl;
 				
 				do{
 					//Tercera Pregunta
-					cout<<"Como respondes a la invitacion?"<<endl;
+					cout<<"Que piensas hacer?"<<endl;
 					cout<<endl;
-					cout<<"1. Me encanta la idea"<<endl;
-					cout<<"2. Claro, por que no?"<<endl;
-					cout<<"3. Yo apuntadisima"<<endl;
+					cout<<"1. Esperar a que te invite"<<endl;
+					cout<<"2. Invitarlo tu"<<endl;
+					cout<<"3. Invitar a alguien mas"<<endl;
 					cout<<endl;
 					cout<<"Elige una opcion (1, 2 o 3):"<<endl;
 					cout<<"Presiona 4 para salir del juego"<<endl;
@@ -183,28 +200,31 @@ int main(){
 						cout<<endl<<"Opcion no valida, por favor intenta de nuevo:"<<endl;
 						cout<<endl;
 					}
-				}while(respuestaTres!=1 && respuestaTres!=2 && respuestaTres!=3);
+					
+					if(respuestaTres == 3){
+						cout<<endl<<"No manches como vas a invitar a alguien mas, Alex es el chico mas guapo que has visto en toda tu vida"<<endl;
+						cout<<endl;
+					}
+				}while(respuestaTres!=1 && respuestaTres!=2);
 				
 				switch(respuestaTres){
 					case 1:
-						atractivo=atractivo+0;
+						atractivo=atractivo-20;
 						cout<<endl;
-						cout<<"Le fascina tu entusiasmo, esta muy emocionado por la cita. Tu atractivo se mantiene."<<endl;
+						cout<<"Alex esperaba que lo invites, pero como no fue asi acepto la invitacion de otra chica :("<<endl;
+						cout<<"Aun te lo puedes encontrar ese dia, pero tu falta de iniciativa te hace perder 20 puntos de atractivo"<<endl;
 						cout<<"Tu nivel de atractivo es: "<<atractivo<<" puntos"<<endl;
+						cout<<endl;
+						cout<<"De todos modos vas a ir, quien sabe que pueda pasar..."<<endl;
 					break;
 					
 					case 2:
-						atractivo=atractivo-10;
+						atractivo=atractivo+10;
 						cout<<endl;
-						cout<<"Mmm no le gusto mucho el tono en el que respondiste. Pierdes 10 puntos de atractivo."<<endl;
+						cout<<"Alex acepta con gusto tu invitacion!! Las chicas con iniciativa son su tipo. Ganas 10 puntos de atractivo"<<endl;
 						cout<<"Tu nivel de atractivo es: "<<atractivo<<" puntos"<<endl;
-					break;
-					
-					case 3:
-						atractivo=atractivo-20;
 						cout<<endl;
-						cout<<"Sonaste muy desesperada y lo asustas un poco. Pierdes 20 puntos de atractivo."<<endl;
-						cout<<"Tu nivel de atractivo es: "<<atractivo<<" puntos"<<endl;
+						cout<<"Ya no puedes con la emocion de que llegue el dia..."<<endl;
 					break;
 					
 					default:
@@ -214,17 +234,16 @@ int main(){
 				}
 				
 				cout<<endl;
-				cout<<"Por fin es el dia de la cita!!"<<endl;
-				cout<<"Estas muy emocionada y necesitas elegir todo tu outfit UuU"<<endl;
-				cout<<"Ya estas en los ultimos detalles, solo falta..."<<endl;
+				cout<<"Por fin es el diaaaaaa"<<endl;
+				cout<<"Necesitas elegir tu outfit UuU"<<endl;
 				
 				do{
 					//Cuarta pregunta
-					cout<<"De que color te pintas las unias?"<<endl;
+					cout<<"De que color eliges tu top?"<<endl;
 					cout<<endl;
-					cout<<"1. Rosas"<<endl;
-					cout<<"2. French"<<endl;
-					cout<<"3. Negras"<<endl;
+					cout<<"1. Rojo"<<endl;
+					cout<<"2. Negro"<<endl;
+					cout<<"3. Blanco"<<endl;
 					cout<<endl;
 					cout<<"Elige una opcion (1,2 o 3):"<<endl;
 					cout<<"Presiona 4 para salir del juego"<<endl;
@@ -244,23 +263,23 @@ int main(){
 				
 				switch(respuestaCuatro){
 					case 1:
-						atractivo=atractivo-20;
+						atractivo=atractivo-10;
 						cout<<endl;
-						cout<<"Resulta ser un color muy basico. Pierdes 20 puntos de atractivo."<<endl;
+						cout<<"Resulta ser un color que no te favorece. Pierdes 10 puntos de atractivo."<<endl;
 						cout<<"Tu nivel de atractivo es: "<<atractivo<<" puntos"<<endl;
 					break;
 					
 					case 2:
-						atractivo=atractivo+0;
+						atractivo=atractivo+10;
 						cout<<endl;
-						cout<<"Excelente eleccion, sencillo pero elegante. Tu atractivo se mantiene."<<endl;
+						cout<<"Excelente eleccion, de negro nunca puedes ir mal. Ganas 10 puntos de atractivo."<<endl;
 						cout<<"Tu nivel de atractivo es: "<<atractivo<<" puntos"<<endl;
 					break;
 					
 					case 3:
-						atractivo=atractivo-10;
+						atractivo=atractivo+0;
 						cout<<endl;
-						cout<<"Pareces una chica misteriosa...pero un poco intimidante. Pierdes 10 puntos de atractivo."<<endl;
+						cout<<"Es un lindo color, pero no te hace destacar. No ganas ni pierdes atractivo"<<endl;
 						cout<<"Tu nivel de atractivo es: "<<atractivo<<" puntos"<<endl;
 					break;
 					
@@ -270,54 +289,183 @@ int main(){
 						cout<<endl;
 				}
 				
+				if(respuestaTres == 1){
+					cout<<endl;
+					cout<<"Llegas al lugar y buscas a Alex"<<endl;
+					cout<<"Lo ves a lo lejos con su cita..."<<endl;
+					cout<<"No vas a dejar que eso te desanime"<<endl;
+					cout<<"No sabes si acercarte o esperar a que el se acerque..."<<endl;
+					
+					do{
+						//Pregunta Cinco A
+						cout<<"Que haces?"<<endl;
+						cout<<endl;
+						cout<<"1. Te acercas con el para iniciar una conversacion"<<endl;
+						cout<<"2. Le lanzas miradas para que se acerque a ti"<<endl;
+						cout<<"3. No haces nada"<<endl;
+						cout<<endl;
+						cout<<"Elige una opcion (1,2 o 3):"<<endl;
+						cout<<"Presiona 4 para salir del juego"<<endl;
+						cout<<endl;
+						cin>>respuestaCincoA;
+						
+						if(respuestaCincoA == 4){
+							cout<<endl<<"Vuelve pronto :)"<<endl;
+							return 0;
+						}
+						
+						if(respuestaCincoA!=1 && respuestaCincoA!=2 && respuestaCincoA!= 3){
+							cout<<endl<<"Opcion no valida, por favor intenta de nuevo:"<<endl;
+							cout<<endl;
+						}
+						
+						if(respuestaCincoA == 3){
+							cout<<endl<<"No puedes no hacer nada >:( ya estas ahi, es momento de actuar"<<endl;
+							cout<<endl;
+						}
+					}while(respuestaCincoA!=1 && respuestaCincoA!=2);
+					
+					switch(respuestaCincoA){
+						case 1:
+							atractivo=atractivo+10;
+							cout<<endl;
+							cout<<"Te saluda con muchos animos, le da gusto verte."<<endl;
+							cout<<"Resulta que su cita no iba muy bien y necesitaba un pretexto para huir"<<endl;
+							cout<<"Por tu iniciativa ganas 10 puntos de atractivo"<<endl;
+							cout<<"Tu nivel de atractivo es: "<<atractivo<<" puntos"<<endl;
+						break;
+						
+						case 2:
+							atractivo=atractivo-10;
+							cout<<endl;
+							cout<<"Aunque Alex te ve a lo lejos no entiende tus miradas"<<endl;
+							cout<<"Penso que solo estabas disociado..."<<endl;
+							cout<<"Se acerca a ti de casualidad"<<endl;
+							cout<<"Por tu falta de iniciativa pierdes 10 puntos de atractivo"<<endl;
+							cout<<"Tu nivel de atractivo es: "<<atractivo<<" puntos"<<endl;
+						break;
+						
+						default:
+							cout<<endl;
+							cout<<"Opcion no valida, por favor intenta de nuevo: "<<endl;
+							cout<<endl;
+					}
+				}
+				
+				if(respuestaTres == 2){
+					cout<<endl;
+					cout<<"Alex pasa por ti despues de clases y llegan al lugar"<<endl;
+					cout<<"El ambiente es ideal"<<endl;
+					cout<<"Van a buscar algo de tomar"<<endl;
+					
+					do{
+						//Pregunta Cinco B
+						cout<<"Que eliges?"<<endl;
+						cout<<endl;
+						cout<<"1. Cerveza"<<endl;
+						cout<<"2. Azulito"<<endl;
+						cout<<"3. Agua"<<endl;
+						cout<<endl;
+						cout<<"Elige una opcion (1,2 o 3):"<<endl;
+						cout<<"Presiona 4 para salir del juego"<<endl;
+						cout<<endl;
+						cin>>respuestaCincoB;
+						
+						if(respuestaCincoB == 4){
+							cout<<endl<<"Vuelve pronto :)"<<endl;
+							return 0;
+						}
+						
+						if(respuestaCincoB!=1 && respuestaCincoB!=2 && respuestaCincoB!= 3){
+							cout<<endl<<"Opcion no valida, por favor intenta de nuevo:"<<endl;
+							cout<<endl;
+						}
+					}while(respuestaCincoB!=1 && respuestaCincoB!=2);
+					
+					switch(respuestaCincoB){
+						case 1:
+							atractivo=atractivo-10;
+							cout<<endl;
+							cout<<"No estas mal...pero tampoco estas bien"<<endl;
+							cout<<"No es la bebida para la ocasión"<<endl;
+							cout<<"Pierdes 10 puntos de atractivo"<<endl;
+							cout<<"Tu nivel de atractivo es: "<<atractivo<<" puntos"<<endl;
+						break;
+						
+						case 2:
+							atractivo=atractivo+10;
+							cout<<endl;
+							cout<<"Deliciosa eleccion"<<endl;
+							cout<<"Es una bebida buena para la ocasion"<<endl;
+							cout<<"Ganas 10 puntos de atractivo"<<endl;
+							cout<<"Tu nivel de atractivo es: "<<atractivo<<" puntos"<<endl;
+						break;
+						
+						case 3:
+							atractivo=atractivo-20;
+							cout<<endl;
+							cout<<"No se va al SHINE a tomar agua como crees"<<endl;
+							cout<<"Das una impresion aburrida"<<endl;
+							cout<<"Pierdes 20 puntos de atractivo"<<endl;
+							cout<<"Tu nivel de atractivo es: "<<atractivo<<" puntos"<<endl;
+							
+						default:
+							cout<<endl;
+							cout<<"Opcion no valida, por favor intenta de nuevo: "<<endl;
+							cout<<endl;
+					}
+				}
+				
 				cout<<endl;
-				cout<<"Sientes que la cita va de maravilla!!"<<endl;
-				cout<<"Estan eligiendo algo para comer y el te deja escoger a ti"<<endl;
-				cout<<"Sabes que es muy quisquilloso con la comida y no quisieras arruinar la cita..."<<endl;
+				cout<<"Estas bailando con el y todo parece ir increible"<<endl;
+				cout<<"Sientes que es momento de hacer un movimiento..."<<endl;
+				cout<<endl;
 				
 				do{
-					//Quinta pregunta
-					cout<<"Que eliges para comer?"<<endl;
+					//Sexta pregunta
+					cout<<"Que haras?"<<endl;
 					cout<<endl;
-					cout<<"1. Green Grass"<<endl;
-					cout<<"2. Kentucky"<<endl;
-					cout<<"3. McDonalds"<<endl;
+					cout<<"1. Lo miras fijamente"<<endl;
+					cout<<"2. Le tomas la mano"<<endl;
+					cout<<"3. Lo besas"<<endl;
 					cout<<endl;
 					cout<<"Elige una opcion (1,2 o 3):"<<endl;
 					cout<<"Presiona 4 para salir del juego"<<endl;
 					cout<<endl;
-					cin>>respuestaCinco;
+					cin>>respuestaSeis;
 					
-					if(respuestaCinco == 4){
+					if(respuestaSeis == 4){
 						cout<<endl<<"Vuelve pronto :)"<<endl;
 						return 0;
 					}
 					
-					if(respuestaCinco!=1 && respuestaCinco!=2 && respuestaCinco!=3){
+					if(respuestaSeis!=1 && respuestaSeis!=2 && respuestaSeis!=3){
 						cout<<endl<<"Opcion no valida, por favor intenta de nuevo:"<<endl;
 						cout<<endl;
 					}
-				}while(respuestaCinco!=1 && respuestaCinco!=2 && respuestaCinco!=3);
+				}while(respuestaSeis!=1 && respuestaSeis!=2 && respuestaSeis!=3);
 				
-				switch(respuestaCinco){
+				switch(respuestaSeis){
 					case 1:
 						atractivo=atractivo-10;
 						cout<<endl;
-						cout<<"Le parece una eleccion algo pretenciosa. Pierdes 10 puntos de atractivo."<<endl;
+						cout<<"De nuevo, Alex no entiende tus miradas. Pierdes 10 puntos de atractivo"<<endl;
 						cout<<"Tu nivel de atractivo es: "<<atractivo<<" puntos"<<endl;
 					break;
 					
 					case 2:
-						atractivo=atractivo-20;
+						atractivo=atractivo+0;
 						cout<<endl;
-						cout<<"Pesima decision, considera que es una comida desagradable. Pierdes 20 puntos de atractivo."<<endl;
+						cout<<"Lo pone nervioso...pero le gusta"<<endl;
+						cout<<"Tu atractivo se mantiene"<<endl;
 						cout<<"Tu nivel de atractivo es: "<<atractivo<<" puntos"<<endl;
 					break;
 			
 					case 3:
-						atractivo=atractivo+0;
+						atractivo=atractivo+10;
 						cout<<endl;
-						cout<<"Le encanta McDonalds, siente que tienen mucho en comun. Tu atractivo se mantiene"<<endl;
+						cout<<"No lo esperaba, pero te sigue el beso...y todo ocurre en camara lenta <3<3<3"<<endl;
+						cout<<"Ganas 20 puntos de atractivo"<<endl;
 						cout<<"Tu nivel de atractivo es: "<<atractivo<<" puntos"<<endl;
 					break;
 					
@@ -332,12 +480,12 @@ int main(){
 					cout<<"Felicidades!!! Lograste mantener tu atractivo y con eso enamorar a Alex"<<endl;
 					cout<<"Eres un expert@ en Flirt Simulator"<<endl;
 					cout<<"Esperamos te hayas divertido mucho, vuelve pronto <3<3<3"<<endl;
-				}else if(atractivo<70 && atractivo>40){
+				}else if(atractivo<70 && atractivo>=40){
 					cout<<endl;
 					cout<<"Has conseguido un maravilloso amigo!! u_u"<<endl;
 					cout<<"Alex no se enamoro de ti pero te considera como una hermana"<<endl;
 					cout<<"Puedes volver a intentar la proxima vez"<<endl;
-				}else if(atractivo<=40){
+				}else if(atractivo<40){
 					cout<<endl;
 					cout<<"Lamentablemente Alex considera que su relacion no tiene futuro, ni como amigos"<<endl;
 					cout<<"Hay mas peces en el mar...tal vez"<<endl;
@@ -392,8 +540,6 @@ int main(){
 		
 	return 0;
 }
-
-
 
 
 
