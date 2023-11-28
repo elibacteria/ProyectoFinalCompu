@@ -165,7 +165,7 @@ int main(){
 				cout<<endl;
 				cout<<"+.......................+"<<endl;
 				cout<<":      PROXIMAMENTE     :"<<endl;
-				cout<<":       DANNY FLOW      :"<<endl;
+				cout<<":       DANI FLOW      :"<<endl;
 				cout<<":                       :"<<endl;
 				cout<<":   EN EL SHINE ARAGON  :"<<endl;
 				cout<<":                       :"<<endl;
@@ -508,7 +508,7 @@ int main(){
 			//El tercer caso te indica como realizar una donacion al proyecto
 			case 3:
 				cout<<endl;
-				cout <<"Si te gusto el proyecto y quieres apoyarlo puedes hacer una donacion al siguiente numero de cuenta :**"<<endl;
+				cout <<"Si te gusto el proyecto y quieres apoyarlo puedes hacer una donacion al siguiente numero de cuenta :*"<<endl;
 				cout<<"Numero: 4152 3139 4898 0128"<<endl;
 				cout<<"Banco: BBVA"<<endl;
 				cout<<"A nombre de: Elizabeth Laguna"<<endl;
